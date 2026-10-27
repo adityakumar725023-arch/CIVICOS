@@ -1,6 +1,7 @@
 # CivicSOS — Smart Civic Issue Reporting & Resolution Platform
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Online%20Preview-emerald?style=for-the-badge&logo=googlechrome&logoColor=white)](https://adityakumar725023-arch.github.io/CIVICOS/)
+[![Render](https://img.shields.io/badge/Deploy-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://render.com/deploy?repo=https://github.com/adityakumar725023-arch/CIVICOS)
 [![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?style=for-the-badge&logo=github)](https://adityakumar725023-arch.github.io/CIVICOS/)
 [![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20Tailwind%20%7C%20Leaflet-navy?style=for-the-badge)](https://github.com/adityakumar725023-arch/CIVICOS)
 
@@ -12,8 +13,9 @@
 
 | Deployment | Direct URL |
 |---|---|
-| 🚀 **Official Live Application** | **[https://adityakumar725023-arch.github.io/CIVICOS/](https://adityakumar725023-arch.github.io/CIVICOS/)** |
+| 🚀 **Deploy to Render (Free)** | [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/adityakumar725023-arch/CIVICOS) |
 | ⚡ **One-Click Vercel Deploy** | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fadityakumar725023-arch%2FCIVICOS) |
+| 🌐 **GitHub Pages Live App** | **[https://adityakumar725023-arch.github.io/CIVICOS/](https://adityakumar725023-arch.github.io/CIVICOS/)** |
 | 💻 **Local Dev Server** | `http://localhost:5173/` |
 
 > 💡 **GitHub Pages Quick Enable**: In your repository, go to **Settings** → **Pages** → under **Build and deployment / Source**, select **GitHub Actions**. The automated workflow will publish the app live to the link above!
