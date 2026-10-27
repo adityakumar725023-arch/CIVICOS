@@ -1,44 +1,43 @@
 # CivicSOS — Smart Civic Issue Reporting & Resolution Platform
 
-> **Hackathon Prototype** | Developed with React, Vite, Tailwind CSS, Leaflet, and Recharts.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online%20Preview-emerald?style=for-the-badge&logo=googlechrome&logoColor=white)](https://adityakumar725023-arch.github.io/CIVICOS/)
+[![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?style=for-the-badge&logo=github)](https://adityakumar725023-arch.github.io/CIVICOS/)
+[![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20Tailwind%20%7C%20Leaflet-navy?style=for-the-badge)](https://github.com/adityakumar725023-arch/CIVICOS)
+
+> **CivicTech Hackathon Project** | A transparent digital bridge connecting citizens with municipal authorities to report, track, and resolve urban infrastructure issues.
+
+---
+
+## 🌐 Live Demo Links
+
+| Deployment | Direct URL |
+|---|---|
+| 🚀 **Official Live Application** | **[https://adityakumar725023-arch.github.io/CIVICOS/](https://adityakumar725023-arch.github.io/CIVICOS/)** |
+| ⚡ **One-Click Vercel Deploy** | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fadityakumar725023-arch%2FCIVICOS) |
+| 💻 **Local Dev Server** | `http://localhost:5173/` |
+
+> 💡 **GitHub Pages Quick Enable**: In your repository, go to **Settings** → **Pages** → under **Build and deployment / Source**, select **GitHub Actions**. The automated workflow will publish the app live to the link above!
 
 ---
 
 ## 🌟 Overview & Vision
 
-**CivicSOS** is a modern, transparent civic-tech SaaS platform designed to transform how citizens report local urban infrastructure problems and how municipal authorities triage, prioritize, and resolve them.
+**CivicSOS** replaces traditional bureaucratic grievances with a geo-tagged, transparent, community-validated, and accountable municipal resolution pipeline.
 
-### The Complete Workflow Journey
-1. **Citizen Lodges Issue:** Geotagged photo upload, category selection, automatic department routing (Roads, Sanitation, Electricity, Water Board, Public Works).
-2. **Instant Ticket & SLA:** Citizen receives an official grievance ticket number (e.g. `CV-2026-1042`), downloadable receipt, and SLA countdown.
-3. **Public Transparency Feed:** Neighbors can search, filter by ward, and upvote/endorse the issue to signal collective urgency.
-4. **Authority Command Center:** Municipal officers review pending queues, flag critical emergencies (e.g., missing manhole, water main burst), deploy field teams, and update progress in real time.
-5. **Resolution Verification:** Before closing an incident, officers upload resolution proof photos and field reports so citizens can inspect the Before vs. After results.
-6. **City-Wide Analytics:** Live dashboard tracking resolution ratios, mean turnaround hours, ward-wise incident density, and department SLA adherence.
-
----
-
-## 🚀 Live Demo & Quick Start
-
-The application runs locally using Vite:
-
-```bash
-# 1. Install dependencies
-npm install
-
-# 2. Run local development server
-npm run dev
-```
-
-Open your browser at **`http://localhost:5173/`**.
+### The Complete 5-Stage Civic Lifecycle:
+1. **Citizen Lodges Grievance:** Geo-tagged visual evidence, auto-categorization (Roads, Waste, Electric, Water, Public Works, Safety Hazards).
+2. **Automated Department Routing:** Instant ticket ID generated (e.g. `CV-2026-1042`), assigned to zonal engineer with guaranteed SLA timer (4h, 24h, 48h).
+3. **Public Transparency & "Me Too" Endorsements:** Citizens browse nearby issues, view map markers, and upvote to elevate civic urgency.
+4. **Authority Command Center:** Municipal officers triage queues, review critical emergencies, dispatch field crews, and update live progress.
+5. **Resolution Verification Proof:** Officers upload verified resolution photos and field notes before closing, giving citizens side-by-side Before vs. After proof.
 
 ---
 
 ## 🎯 Features Designed for Hackathon Judges
 
 - **One-Click "Demo Incident" Button:** Located in the top navigation bar. Instantly loads a realistic civic scenario for a 5-second live demo!
-- **Instant Photo Presets:** In the complaint filing form, judges can click one of the preset high-resolution civic photos (Pothole, Waste, Streetlight, Pipeline) without needing local files.
-- **Before vs. After Photo Inspection:** Check resolved complaints (like `CV-2026-1038` or `CV-2026-1019`) in the Public Feed to see side-by-side verification photos.
+- **Instant Photo Presets:** In the complaint filing form, judges can click preset high-resolution civic photos (Pothole, Waste, Streetlight, Pipeline) without needing local files.
+- **Before vs. After Photo Inspection:** Check resolved complaints (like `CV-2026-1038` or `CV-2026-1019`) in the Public Feed to inspect verified proof photographs.
 - **Interactive OpenStreetMap (Leaflet):** Real-time color-coded pins across municipal wards showing issue locations and statuses.
 - **Role Switcher:** Easily toggle between **"Citizen"** and **"Authority Admin"** modes from the top bar to experience both perspectives.
 - **Data Export & Reset:** Export the complete complaints ledger as CSV or JSON, or reset to initial mock cases anytime with "Reset Demo".
@@ -55,37 +54,29 @@ Open your browser at **`http://localhost:5173/`**.
 | **Geospatial Map** | Leaflet + OpenStreetMap | Interactive, zero-API-key mapping with custom DivIcons |
 | **Analytics & Charts** | Recharts 2 | Interactive category bars, status donut, and ward breakdowns |
 | **Data Persistence** | Browser LocalStorage | Zero-setup initial state with seed datasets and full CRUD |
+| **Deployment** | GitHub Actions + GitHub Pages / Vercel | Automatic CI/CD pipeline |
 | **Future Backend** | Node.js + Express | RESTful API specifications (`/api/v1/complaints`) |
 | **Future Database** | PostgreSQL + PostGIS | Geospatial indexing for geo-fencing and clustering |
 
 ---
 
-## 🏛️ Project Directory Structure
+## 🚀 Running Locally
 
+```bash
+# 1. Clone the repository
+git clone https://github.com/adityakumar725023-arch/CIVICOS.git
+
+# 2. Navigate to project directory
+cd CIVICOS
+
+# 3. Install dependencies
+npm install
+
+# 4. Start local development server
+npm run dev
 ```
-c:\Users\adity\OneDrive\Desktop\OSEN HACKATHON
-├── src/
-│   ├── assets/                 # Icons and media
-│   ├── components/
-│   │   ├── about/              # System architecture and hackathon documentation
-│   │   ├── admin/              # Municipal Officer Dashboard & Complaint Table
-│   │   ├── citizen/            # Report Issue Form & Success Receipt Modal
-│   │   ├── common/             # Badges, Notification Toast, Stat Cards
-│   │   ├── feed/               # Public Feed, Card view, Detail Timeline Modal
-│   │   ├── layout/             # Top Navbar, Compact Sidebar, Footer
-│   │   └── map/                # Leaflet Geospatial Incident Map
-│   ├── constants/              # Categories, Departments, Wards, Priorities, Presets
-│   ├── data/                   # Realistic seed complaint datasets
-│   ├── services/               # LocalStorage CRUD, analytics, upvotes, CSV exports
-│   ├── App.jsx                 # Top-level state coordinator and view router
-│   ├── index.css               # Tailwind directives and Leaflet CSS styles
-│   └── main.jsx                # React DOM root entry
-├── index.html                  # HTML template with Inter font and Leaflet assets
-├── package.json                # Project dependencies and npm scripts
-├── postcss.config.js           # PostCSS configuration
-├── tailwind.config.js          # CivicSOS color palette and typography
-└── vite.config.js              # Vite server configuration
-```
+
+Open [http://localhost:5173/](http://localhost:5173/) in your web browser.
 
 ---
 
@@ -95,3 +86,10 @@ c:\Users\adity\OneDrive\Desktop\OSEN HACKATHON
 2. **Speed & Usability:** Frictionless filing in under 45 seconds with GPS auto-detection, photo evidence, and automatic department assignment.
 3. **Accountability:** Built-in SLA classification (Critical: 4h, High: 24h, Medium: 48h) alerts administrators to overdue incidents before public escalation.
 4. **Community Validation:** Upvote mechanism allows citizens to endorse existing complaints in their area, preventing duplicate tickets while elevating priority.
+
+---
+
+## 📄 License & Attribution
+
+Built for the Hackathon by **Aditya Kumar** (B.Tech CSE).  
+CivicSOS — Smart Civic Issue Reporting & Resolution Platform &copy; 2026.
